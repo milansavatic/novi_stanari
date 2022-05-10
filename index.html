@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <h1 class="header">Podaci o stanarima zgrade</h1>
+    <div class="container">
+        <div class="data-entry" id="add-people-view" >
+            <h2>Redni broj:</h2>
+            <input type="number" placeholder="id" min="0" value="0">
+            <h2>Ime stanara:</h2>
+            <input type="text" placeholder="ime">
+            <h2>Prezime stanara:</h2>
+            <input type="text" placeholder="prezime">
+            <h2>Email:</h2>
+            <input type="text" placeholder="email">
+            <h2>Godine:</h2>
+            <input type="number" placeholder="godine" min="0" value="0">
+            <br>
+            <button id="save" class="btn-data">Dodaj stanara</button>
+        </div>
+            
+               
+                <div class="new-people"> 
+                    <h2>Prikaz unetih podataka</h2>
+                    <table width="100%">
+                        <thead  class="theadd">
+                            <tr>
+                                <th>#</th>
+                                <th>Ime</th>
+                                <th>Prezime</th>
+                                <th>Email</th>
+                                <th>Godine</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="entry-people">
+                            
+                        </tbody>
+                    </table>
+                        
+                    
+    
+            
+            </div>
+        
+
+        </div>
+       
+    <script src="db.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
